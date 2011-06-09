@@ -6,6 +6,7 @@ import java.util.Map;
 public class RefinerController implements Iterator<CorpusItem> {
 
     protected final Map<String,CorpusItem> corpus;
+    
     protected CorpusItem currentItem;
 
     public RefinerController(Map<String,CorpusItem> corpus) {
