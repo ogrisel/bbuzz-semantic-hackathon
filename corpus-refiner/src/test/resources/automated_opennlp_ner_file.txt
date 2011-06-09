@@ -1,4 +1,4 @@
-The first pre-commercial demonstration network in the southern hemisphere was built in <START:location> Adelaide <END> , <START:location> South Australia <END> by m.Net Corporation in February 2002 using UMTS on 2100&nbsp;MHz .
+The first pre-commercial demonstration network in the southern hemisphere was built in <START:location> Adelaide <END> , <START:location> South Australia <END> by m.Net Corporation in February 2002 using UMTS on 2100 MHz .
 All 3 of them appear on the new <START:organization> A&E <END> TV show entitled .
 In November 2008 , <START:organization> Qualcomm <END> , UMB 's lead sponsor , announced it was ending development of the technology , favouring LTE instead .
 The 7z format initially appeared as implemented by the <START:software> 7-Zip <END> archiver .
@@ -50,7 +50,7 @@ In 1994 , the same year that Jawbreaker 's 24 Hour Revenge Therapy and Sunny Day
 FHM publishes in 26 territories , including <START:location> Australia <END> , <START:location> Bulgaria <END> , China , <START:location> Croatia <END> , <START:location> Czech Republic <END> , <START:location> France <END> , <START:location> Germany <END> , <START:location> India <END> , <START:location> Indonesia <END> , <START:location> Israel <END> , <START:location> Latvia <END> , <START:location> Lithuania <END> , <START:location> Malaysia <END> , the <START:location> Netherlands <END> , <START:location> Norway <END> , the <START:location> Philippines <END> , <START:location> Portugal <END> , <START:location> Romania <END> , <START:location> Russia <END> , <START:location> Singapore <END> , <START:location> Slovenia <END> , <START:location> South Africa <END> , <START:location> Spain <END> , <START:location> Taiwan <END> , <START:location> Thailand <END> , <START:location> Turkey <END> , the <START:location> United Kingdom <END> and the <START:location> United States <END> , FHM previously also published in <START:location> Denmark <END> :
 <START:person> Frederick Bakewell <END> made several improvements on Bain 's design and demonstrated his device at the 1851 Great Exhibition in London .
 It also has an ONCF train station which goes east to <START:location> Oujda <END> and west to <START:location> Tanger <END> and <START:location> Casablanca <END> .
-Examples of the latter include trompe l'oeil paintings of the fifteenth century such as Portrait of a Carthusian by <START:person> Petrus Christus <END> , showing a fly sitting on a fake frame&nbsp; , a 2001 art project by Garnet Hertz in which a complete web server was implanted into a dead fly http ://www.conceptlab.com/fly/ ,
+Examples of the latter include trompe l'oeil paintings of the fifteenth century such as Portrait of a Carthusian by <START:person> Petrus Christus <END> , showing a fly sitting on a fake frame  , a 2001 art project by Garnet Hertz in which a complete web server was implanted into a dead fly http ://www.conceptlab.com/fly/ ,
 <gallery > File :21556590 c502571c75 o.jpg| Fog permeates through the trees in <START:location> Redwood National and State Parks <END> File :GGB in fog 2007 edit .jpg|Golden
 The word "fop " is first recorded in 1440 , and for several centuries just meant a fool of any kind ; the <START:book> OED <END> notes first use with the meaning of "one who is foolishly attentive to and vain of his appearance , dress , or manners ; a dandy , an exquisite " in 1672 .
 Red foxes have been introduced into <START:location> Australia <END> which lacks similar carnivores , and the introduced foxes prey on native wildlife , some to the point of extinction .
@@ -150,7 +150,7 @@ During World War II , when <START:location> Czechoslovakia <END> was temporarily
 Skid Simon explained the principles that lay behind the system , and the system was further popularised in Britain by <START:person> Iain Macleod <END> .
 As a result of this incident , Samuel said to Saul that " [y]ou have rejected the word of the Lord , and the Lord has rejected you as king over <START:location> Israel <END> . "
 This may have originally referred to flames from natural gas or oil seepages surfacing through water , as in a fire temple at Surakhany near <START:location> Baku <END> in <START:location> Azerbaijan <END> http ://www.avesta .org/modi/baku.htm .
-<START:location> Agra Airport <END> is about 12.5&nbsp;km from city center
+<START:location> Agra Airport <END> is about 12.5 km from city center
 Notable buildings in the fort include the Pearl Mosque or Motī Masjid , the Dīwān-e-'Ām and Dīwān-e-Khās ( halls of public and private audience ) , <START:person> Jahāngīr 's Palace <END> , Khās Mahal , Shīsh Mahal ( mirrored palace ) , and the Musamman Burj .
 The city is located on the national road running from <START:location> Bucharest <END> to Oradea and then crossing the Hungarian border to Budapest .
 It was often deployed to security operations on the northern fringes of the country , as far north as southern <START:location> Sakhalin <END> .
@@ -258,7 +258,7 @@ In <START:location> West Bengal <END> and <START:location> Orissa <END> of India
 The countryside of Homs saw an increase in Bedouin ravages in the first half of the 19th century , interrupted by it and Syria 's occupation by Muhammad Ali 's Egypt led by <START:person> Ibrahim Pasha <END> between 1832 and 1840 .
 The city boasts a number of historic mosques and churches and is near the <START:location> Krak des Chevaliers <END> , a world heritage site .
 The poem was first performed at the Six Gallery in <START:location> San Francisco <END> on October 7 , 1955 .
-On another occasion , he explained : " the line length ... you 'll notice that they 're all built on bop&nbsp; — you might think of them as a bop refrain&nbsp;—chorus after chorus after chorus&nbsp; — the ideal being , say , <START:person> Lester Young <END> in <START:location> Kansas City <END> in 1938 , blowing 72 choruses of ' The Man I Love ' until everyone in the hall was out of his head .. . "
+On another occasion , he explained : " the line length ... you 'll notice that they 're all built on bop  — you might think of them as a bop refrain —chorus after chorus after chorus  — the ideal being , say , <START:person> Lester Young <END> in <START:location> Kansas City <END> in 1938 , blowing 72 choruses of ' The Man I Love ' until everyone in the hall was out of his head .. . "
 There are several roads and streets named after the Huia in the North Island , with several in Wellington ( including Huia Road in Days Bay – not far from where one of the last sightings of this species occurred in the early 1920s in the forests of <START:location> East Harbour Regional Park <END> ) and also in Auckland , where there is even a Huia suburb in Waitakere .
 A 1830s painting by <START:person> John Gould <END> illustrating the remarkable sexual dimorphism of the Huia 's beak .
 One reason was that the Huns never fully established the mechanisms of a state , such as bureaucracy and taxes , unlike Bulgars , Magyars or the <START:location> Golden Horde <END> .
@@ -312,9 +312,9 @@ Other bands Korn opened for in 1995 included <START:organization> Megadeth <END>
 The second single was a medley of all three parts of <START:organization> Pink Floyd <END> 's " Another Brick in the Wall" .
 While Bell in his book says designing the LINC provided the ideas for DEC 's second and third machines , the 18-bit inexpensive follow-on to its first , the PDP-4 and the company 's first 12-bit design of its own , the PDP-5 , <START:organization> Digital Equipment Corporation <END> would launch the wondrous PDP-8 before it manufactured the first next-generation LINC-compatible computer , the LINC-8 and a combination of the 7400-series chip-based PDP-8/ I and a redesigned LINC , combined as the PDP-12 .
 Between the Lahn’s source area in the Rothaargebirge and <START:location> Gießen <END> , all of the left tributaries are from the less mountainous parts of the West Hessian Bergland .
-Its course passes through the federal states of <START:location> North Rhine-Westphalia <END> ( 23.0&nbsp;km ) ,
+Its course passes through the federal states of <START:location> North Rhine-Westphalia <END> ( 23.0 km ) ,
 Since 1995 the Lao government has been working with the <START:organization> International Rice Research Institute <END> to collect seed samples of each of the thousands of rice varieties found in Laos .
-Lead is a superconductor at 7.2&nbsp;K and <START:organization> IBM <END> tried to make a Josephson effect computer out of lead-alloy .
+Lead is a superconductor at 7.2 K and <START:organization> IBM <END> tried to make a Josephson effect computer out of lead-alloy .
 Lede is a municipality located in the <START:location> Belgian <END> province of East Flanders .
 Two autobahns ( freeways ) cross north of Leer , the A 28 ( Leer - Bremen ) and the A 31 ( Emden - <START:location> Oberhausen <END> , Ruhr Area ) .
 Matheson speculated that Leod 's great-grandfather would have likely flourished at about the same time as <START:person> Olvir Rosta <END> was supposedly exiled to the Outer Hebrides .
@@ -540,7 +540,7 @@ The Assad family In 1970 , then-Air <START:organization> Force <END> Colonel <ST
 <START:location> Mayon Volcano <END> , standing at around 2460 meters , is the most famous landform in Albay , and in the whole of Bicol , in fact .
 The name Alcoa was , therefore , created specifically to name the town <START:location> Alcoa , Tennessee <END> , which was founded in 1919 .
 Alder coat of arms of <START:location> Grossarl <END> , <START:location> Austria <END> .
-During the 1990s <START:software> QuarkXPress <END> steadily won ground from PageMaker , and it seemed increasingly odd that Adobe&nbsp;&mdash ; who had created PostScript , so vital to the working of DTP&nbsp;&mdash ; still did not offer its own page layout application .
+During the 1990s <START:software> QuarkXPress <END> steadily won ground from PageMaker , and it seemed increasingly odd that Adobe &mdash ; who had created PostScript , so vital to the working of DTP &mdash ; still did not offer its own page layout application .
 It is also used in parts of Europe such as <START:location> Croatia <END> and <START:location> Serbia <END> as a name for a boulevard , an avenue or a parkway ( such as Bologna Alley in Zagreb) .
 It is the fourth-largest town in Rhenish Hesse , after <START:location> Mainz <END> , <START:location> Worms <END> , and <START:location> Bingen <END> .
 There are direct connections to <START:location> Mainz <END> by Regional-Express and Regionalbahn on the Alzey–Mainz railway , and on the Rheinhessenbahn ( railway ) to <START:location> Bingen <END> and <START:location> Worms <END> .
@@ -689,7 +689,7 @@ The tournament was replaced with a US Open event in 2007 which was screened in t
 God withdraws his favor from <START:person> Saul <END> , king of Israel .
 Subsequently , Davos became a famous ski resort , especially frequented by tourists from the <START:location> United Kingdom <END> and the <START:location> Netherlands <END> .
 On 14 March 2003 , Winterjam was held and famous bands played during the event such as , <START:organization> Sum 41 <END> , <START:organization> Crazy Town <END> , and <START:organization> Guano Apes <END> .
-AIDS death toll in <START:location> Africa <END> may reach 90–100&nbsp;million by 2025 .
+AIDS death toll in <START:location> Africa <END> may reach 90–100 million by 2025 .
 <START:person> Bede <END> wrote of Deira in his Historia Ecclesiastica .
 The most famous of the French deists was <START:person> Voltaire <END> , who acquired a taste for <START:person> Newtonian <END> science , and reinforcement of deistic inclinations , during a two-year visit to England starting in 1726 .
 Others such as <START:person> Thomas Paine <END> were agnostic about the immortality of the soul :
@@ -764,7 +764,7 @@ Gackt held a male-only concert , which consisted only of rock songs , at Club Ci
 The next stop , <START:location> Kashi ( Kashgar ) <END> , was a welcome sight to the merchants .
 The collapse of the Crusader States was offset by Genoa’s alliance with the <START:location> Byzantine Empire <END> , which opened opportunities of expansion into the <START:location> Black Sea <END> and <START:location> Crimea <END> .
 The city of Genoa covers an area of 243 square kilometres ( 151 sq miles ) between the Ligurian Sea and the <START:location> Apennine Mountains <END> .
-Although the physical Earth has excursions of +8,000 m ( <START:location> Mount Everest <END> ) and −11,000 m ( Mariana Trench ) , the geoid 's total variation is less than 200 m (-106 to +85&nbsp;m ) compared to a perfect mathematical ellipsoid .
+Although the physical Earth has excursions of +8,000 m ( <START:location> Mount Everest <END> ) and −11,000 m ( Mariana Trench ) , the geoid 's total variation is less than 200 m (-106 to +85 m ) compared to a perfect mathematical ellipsoid .
 Notable among these are <START:organization> Accra Hearts of Oak SC <END> and Asante Kotoko , which play at the premier league level and are the dominant contenders in the tournament .
 Geographically , the Ghana Empire was approximately north and west of modern Ghana , and it ruled territories in the area of the Sénégal River and east towards the <START:location> Niger River <END> , in modern <START:location> Senegal <END> , <START:location> Mauritania <END> and <START:location> Mali <END> .
 He was the first African head of state to promote Pan-Africanism , an idea he came into contact with during his studies at Lincoln University in <START:location> Pennsylvania <END> ( United States ) , at the time when <START:person> Marcus Garvey <END> was becoming famous for his " Back to Africa Movement . "
@@ -791,7 +791,7 @@ In <START:person> Shakespeare <END> 's Much Ado About Nothing , Benedick spots t
 Hatra ( ) is an ancient city in the <START:location> Ninawa Governorate <END> and al-Jazira region of <START:location> Iraq <END> .
 On July 28 , 1976 , <START:location> Tangshan <END> was struck by a powerful earthquake , the Tangshan earthquake , the deadliest of the 20th century with over 240,000 killed .
 The Zhaozhou Anji Bridge , built by Li Chun during the <START:location> Sui Dynasty <END> , is the oldest stone arch bridge in China , and one of the most significant examples of pre-modern Chinese civil engineering .
-In January 2003 , however , a team from the Norvol Institute in <START:location> Reykjavík <END> , under the leadership of Dr. Ármann Höskuldsson , reported that they found traces of a pyroclastic flow , roughly 5&nbsp;km long , stretching down the side of the mountain .
+In January 2003 , however , a team from the Norvol Institute in <START:location> Reykjavík <END> , under the leadership of Dr. Ármann Höskuldsson , reported that they found traces of a pyroclastic flow , roughly 5 km long , stretching down the side of the mountain .
 Theseus took Helen and left her with his mother Aethra or his associate Aphidnus at <START:location> Aphidnae <END> or <START:location> Athens <END> .
 Evingsen had already become part of <START:location> Altena <END> in 1969 .
 Northern Wei splintered in 534 and would not be restored until 589 , when the <START:location> Sui Dynasty <END> reunified China .
@@ -891,7 +891,7 @@ Three Army LCM-8s served in the 1992-1993 US mission to <START:location> Somalia
 There are ongoing military research programmes in <START:location> Sweden <END> , <START:location> Denmark <END> , the USA and the <START:location> UK <END> with 3-D gated viewing imaging at several kilometers range with a range resolution and accuracy better than ten centimeters .
 LaTeX ( , , , or ) is a document markup language and document preparation system for the <START:software> TeX <END> typesetting program .
 Dinner on the <START:location> Lagos Lagoon <END> .
-From the beginning Lagos has spread on the mainland west of the lagoon and the conurbation , including <START:location> Ikeja <END> and <START:location> Agege <END> , now reaches more than 40&nbsp;km north-west of Lagos Island .
+From the beginning Lagos has spread on the mainland west of the lagoon and the conurbation , including <START:location> Ikeja <END> and <START:location> Agege <END> , now reaches more than 40 km north-west of Lagos Island .
 Lahars are predicted to flow through the valley every 500-1,000 years , so Orting , <START:location> Sumner <END> , <START:location> Puyallup <END> , <START:location> Fife <END> , and the Port of <START:location> Tacoma <END> face considerable risk .
 Latium – together with the present region of <START:location> Campania <END> immediately to the southeast of Latium and the seat of <START:location> Neapolis <END> – became Region I.
 The account of <START:person> King Olaf <END> 's ( A.D. 1015-1021 ) conversion of Dale-Gudbrand to Christianity is popularly recognized .
@@ -980,7 +980,7 @@ After being awakened from his amnesia by <START:person> Johnny Storm <END> of th
 A 1734 French map shows the Yupi people ( "fish-skin " people ) on both sides of the Ussuri and the Amur south of the mouth of the Dondon ( Tondon ) , and the Ketching people further down the Amur ( where Nanai , Ulch , and Nivkh people live now ) Some of the earliest first-hand accounts of the Nanai people in the European languages belong to the French Jesuit geographers travelling on the Ussury and the <START:location> Amur <END> in 1709 .
 Narai’s reign was also known for a small war with England in 1687 and the invasion of Burmese <START:location> Lanna <END> in 1662 .
 At the end of the 19th century , Narva was the leading industrial town in Estonia – 41 % of industrial workers in Estonia were located in Narva , compared to 33 % in <START:location> Tallinn <END> .
-The capital of Ida-Viru County , <START:location> Jõhvi <END> , lies 50&nbsp;km to the west .
+The capital of Ida-Viru County , <START:location> Jõhvi <END> , lies 50 km to the west .
 The Mercure Hotel in <START:location> Sydney <END> and <START:location> Nauru House <END> in Melbourne were sold in 2004 to finance debts and Air Nauru 's only Boeing 737 , which was repossessed in December 2005 .
 Settled by Micronesian and Polynesian people , Nauru was annexed and claimed as a colony by the <START:location> German Empire <END> in the late 19th century .
 Dowiyogo died in office in March 2003 and <START:person> Ludwig Scotty <END> was elected as the President .

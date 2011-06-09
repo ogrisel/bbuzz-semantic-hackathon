@@ -8,9 +8,12 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.charset.Charset;
+import java.util.List;
 import java.util.Map;
 
-import org.junit.BeforeClass;
+import org.apache.commons.io.FileUtils;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 public class TestRefinerController {
@@ -19,16 +22,24 @@ public class TestRefinerController {
 
     protected static String filename = "automated_opennlp_ner_file.txt";
 
-    protected static Map<String,CorpusItem> corpus;
+    protected Map<String,CorpusItem> corpus;
 
-    @BeforeClass
-    public static void lookupTestFile() throws IOException {
+    protected File refinedCorpusFile;
+
+    @Before
+    public void lookupTestFile() throws IOException {
         URL corpusUrl = TestRefinerController.class.getClassLoader().getResource(filename);
         if (corpusUrl == null) {
             throw new IOException(filename + " could not be found in the classpath");
         }
         File corpusToRefine = new File(corpusUrl.getPath());
-        corpus = CorpusFileLoader.load(corpusToRefine, UTF8);
+        corpus = FileCorpusStorage.load(corpusToRefine, UTF8);
+        refinedCorpusFile = File.createTempFile("corpus-refiner-", ".txt");
+    }
+
+    @After
+    public void cleanUpTempfiles() {
+        FileUtils.deleteQuietly(refinedCorpusFile);
     }
 
     @Test
@@ -55,7 +66,7 @@ public class TestRefinerController {
     }
 
     @Test
-    public void testCorpusRefinement() {
+    public void testCorpusRefinement() throws IOException {
         RefinerController controller = new RefinerController(corpus);
         CorpusItem item = controller.first();
         assertEquals("automated_opennlp_ner_file.txt:0", item.getId());
@@ -99,6 +110,20 @@ public class TestRefinerController {
         assertFalse(controller.getItem("automated_opennlp_ner_file.txt:1").isDiscarded());
         assertFalse(controller.getItem("automated_opennlp_ner_file.txt:2").isValid());
         assertTrue(controller.getItem("automated_opennlp_ner_file.txt:2").isDiscarded());
+
+        // save the work back to disk
+        FileCorpusStorage.save(refinedCorpusFile, corpus);
+        List<String> lines = FileUtils.readLines(refinedCorpusFile);
+
+        // just one validated line (majority are empty lines)
+        assertEquals(1000, lines.size());
+        assertEquals("The first pre-commercial demonstration network in the southern hemisphere"
+                     + " was built in <START:location> Adelaide <END> , "
+                     + "<START:location> South Australia <END> by m.Net Corporation in February 2002"
+                     + " using UMTS on 2100 MHz .", lines.get(0));
+        for (int i = 1; i < 1000; i++) {
+            assertEquals(String.format("Line %d is not empty", i), "", lines.get(i));
+        }
     }
 
 }
