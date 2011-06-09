@@ -1,16 +1,9 @@
+# Commands via CLI
 
-= Commands via CLI
+TODO: For each sentence, the CLI iteratively show each proposal to human validation. Commands are:
 
-* For each sentence, the CLI iteratively show each proposal to human validation. Commands are :
-
-* Validate a proposal : space
+* Validate a proposal : space or v
 * Discard a proposal : d 
-* Change a proposal : c
-
-= Notes on specification
-
-data structure :
-id | sentence with open nlp markers
+* Update a proposal : u
 
 
-Each sentence have an unique ID.
