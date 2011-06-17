@@ -1,26 +1,28 @@
 package corpusrefiner;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
+import opennlp.tools.namefind.NameFinderME;
+import opennlp.tools.namefind.NameSample;
+import opennlp.tools.tokenize.WhitespaceTokenizer;
 import opennlp.tools.util.Span;
+
+import org.apache.commons.lang.StringUtils;
 
 public class NamedEntityAnnotatedSentence implements CorpusItem {
 
     protected final String id;
+    protected NameSample nameSample;
     protected String prevId;
     protected String nextId;
-    protected String sentence;
-    protected Span[] annotations;
     protected boolean validated = false;
     protected boolean discarded = false;
 
-    public NamedEntityAnnotatedSentence(String id,
-                                        String sentence,
-                                        Span[] annotations) {
+    public NamedEntityAnnotatedSentence(String id, NameSample nameSample) {
         this.id = id;
-        this.sentence = sentence;
-        this.annotations = annotations;
+        this.nameSample = nameSample;
     }
 
     @Override
@@ -38,14 +40,30 @@ public class NamedEntityAnnotatedSentence implements CorpusItem {
         return nextId;
     }
 
+    public String getAnnotatedContent() {
+        return nameSample.toString();
+    }
+
+    public void setAnnotatedContent(String rawContent) throws IOException {
+        nameSample = NameSample.parse(rawContent, false);
+    }
+
+    @Override
+    public void setAnnotatedContent(String content, List<Span> annotations) throws IOException {
+        Span reducedNames[] = NameFinderME.dropOverlappingSpans(annotations.toArray(new Span[annotations
+                .size()]));
+        String whitespaceTokenizedLine[] = WhitespaceTokenizer.INSTANCE.tokenize(content);
+        nameSample = new NameSample(whitespaceTokenizedLine, reducedNames, false);
+    }
+
     @Override
     public String getContent() {
-        return sentence;
+        return StringUtils.join(nameSample.getSentence(), " ");
     }
 
     @Override
     public List<Span> getAnnotations() {
-        return Arrays.asList(annotations);
+        return Arrays.asList(nameSample.getNames());
     }
 
     @Override

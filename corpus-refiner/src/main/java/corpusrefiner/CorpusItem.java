@@ -1,5 +1,6 @@
 package corpusrefiner;
 
+import java.io.IOException;
 import java.util.List;
 
 import opennlp.tools.util.Span;
@@ -14,12 +15,15 @@ public interface CorpusItem {
      */
     String getId();
 
-    /**
-     * Id t
-     */
     String getPreviousContentItemId();
 
     String getNextContentItemId();
+
+    String getAnnotatedContent();
+
+    void setAnnotatedContent(String annotatedContent) throws IOException;
+
+    void setAnnotatedContent(String content, List<Span> annotations) throws IOException;
 
     String getContent();
 

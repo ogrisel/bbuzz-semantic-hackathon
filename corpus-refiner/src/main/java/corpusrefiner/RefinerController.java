@@ -1,5 +1,7 @@
 package corpusrefiner;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -74,4 +76,13 @@ public class RefinerController implements Iterator<CorpusItem> {
         correctedItem.validate();
         corpus.put(correctedItem.getId(), correctedItem);
     }
+
+    public CorpusItem getCurrentItem() {
+        return currentItem;
+    }
+
+    public void saveToFile(File outputCorpusFile) throws IOException {
+        FileCorpusStorage.save(outputCorpusFile, corpus);
+    }
+    
 }

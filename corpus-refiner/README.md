@@ -12,8 +12,14 @@ Under development (nothing usable yet).
 
 ## Commands via CLI
 
-TODO: For each sentence, the CLI iteratively show each proposal to human validation. Commands are:
+    java -jar target/corpus-refiner-0.1.0-SNAPSHOT.jar ~/data/en/opennlp_person/part-r-00000 /tmp/output.txt
 
-* Validate a proposal : space or v
-* Discard a proposal : d 
-* Update a proposal : u
+For each sentence, the CLI iteratively show each proposal to human validation. Commands are:
+
+* Validate a proposal:  space or v
+* Discard a proposal: d
+* Edit a proposal: e
+* Save before quiting: s
+* Quit without saving: q
+
+You can also use the arrow keys to move browse the corpus.

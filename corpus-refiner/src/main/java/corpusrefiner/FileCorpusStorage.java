@@ -8,17 +8,11 @@ import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
-import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.NameSample;
 import opennlp.tools.namefind.NameSampleDataStream;
-import opennlp.tools.tokenize.WhitespaceTokenizer;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.Span;
-
-import org.apache.commons.lang.StringUtils;
 
 /**
  * Flat file storage for loading a corpus to refine and saving the refined corpus.
@@ -41,9 +35,7 @@ public class FileCorpusStorage {
         while ((sample = samples.read()) != null) {
             prevSentence = currentSentence;
             String id = String.format("%s:%d", corpusFile.getName(), i);
-            // TODO: use a detokenizer while storing the offsets
-            String content = StringUtils.join(sample.getSentence(), " ");
-            currentSentence = new NamedEntityAnnotatedSentence(id, content, sample.getNames());
+            currentSentence = new NamedEntityAnnotatedSentence(id, sample);
             if (prevSentence != null) {
                 currentSentence.prevId = prevSentence.getId();
                 prevSentence.nextId = currentSentence.getId();
@@ -60,13 +52,7 @@ public class FileCorpusStorage {
             // assume the item ordering is preserved by the map implementation
             for (CorpusItem item : corpus.values()) {
                 if (item.isValid()) {
-                    List<Span> names = item.getAnnotations();
-                    Span reducedNames[] = NameFinderME.dropOverlappingSpans(names.toArray(new Span[names
-                            .size()]));
-                    String whitespaceTokenizedLine[] = WhitespaceTokenizer.INSTANCE.tokenize(item
-                            .getContent());
-                    NameSample nameSample = new NameSample(whitespaceTokenizedLine, reducedNames, false);
-                    fileWriter.write(nameSample.toString());
+                    fileWriter.write(item.getAnnotatedContent());
                 }
                 // output a new line even if invalid to be able to re-align refined corpora by multiple
                 // annotators
