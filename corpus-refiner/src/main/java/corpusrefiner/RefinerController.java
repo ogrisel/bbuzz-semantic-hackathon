@@ -46,6 +46,13 @@ public class RefinerController implements Iterator<CorpusItem> {
         }
         return null;
     }
+    
+    public CorpusItem viewNext() {
+        if (hasNext()) {
+            return corpus.get(currentItem.getNextContentItemId());
+        }
+        return null;
+    }
 
     public CorpusItem previous() {
         if (hasPrevious()) {
@@ -54,7 +61,14 @@ public class RefinerController implements Iterator<CorpusItem> {
         }
         return null;
     }
-
+    
+    public CorpusItem viewPrevious() {
+        if (hasPrevious()) {
+            return corpus.get(currentItem.getPreviousContentItemId());
+        }
+        return null;
+    }
+    
     @Override
     public void remove() {
         discard(currentItem.getId());
