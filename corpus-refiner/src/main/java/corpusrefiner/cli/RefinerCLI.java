@@ -25,7 +25,7 @@ public class RefinerCLI {
                                                   + "  's': save validated items and quit\n"
                                                   + "  'q': quit without saving\n";
     public static char[] COMMANDS = new char[] {' ', 'd'};
-
+    	
     public void runSession(InputStream in,
                            PrintStream userPrintStream,
                            RefinerController controller,
@@ -41,23 +41,28 @@ public class RefinerCLI {
         while (!quit) {
             reader.setDefaultPrompt("");
             reader.clearScreen();
-            if (ci.isDiscarded()) {
-                reader.printString("[d] ");
-            } else if (ci.isValid()) {
-                reader.printString("[v] ");
-            } else {
-                reader.printString("[ ] ");
-            }
-            reader.printString(ci.getAnnotatedContent());
-            reader.printNewline();
-            reader.printNewline();
+            
+            //command part
             reader.printNewline();
             reader.printString(COMMANDS_MESSAGE);
             reader.printNewline();
             reader.printString(String.format("Last command code: %d", command));
             reader.printNewline();
-
+            reader.printNewline();
+            
+            //context part
+            reader.printString("Previous item :");
+            reader.printNewline();
+            viewPrevious(controller, reader);
+            reader.printNewline();
+            
+            printCorpusItemStatus(ci,reader);
+            
+            reader.printString(ci.getAnnotatedContent());
+            reader.printNewline();
+           
             command = reader.readVirtualKey();
+           
             switch (command) {
                 case 2: // arrow left
                     ci = handlePrevious(controller, reader);
@@ -88,7 +93,7 @@ public class RefinerCLI {
                 case 'e':
                     reader.clearScreen();
                     reader.printString("Enter correction (annotations start with '<START:type>'"
-                                       + " and end with '<END>'):");
+                                       + " and end with '<END>'), validate with 'enter':");
                     reader.printNewline();
                     reader.printNewline();
                     reader.putString(ci.getAnnotatedContent());
@@ -114,7 +119,8 @@ public class RefinerCLI {
                     break;
 
                 case 'q':
-                    quit = true;
+                	quit = confirmQuit(reader);
+                    
                     break;
 
                 default:
@@ -124,22 +130,67 @@ public class RefinerCLI {
         }
     }
 
-    protected CorpusItem handleNext(RefinerController controller, ConsoleReader reader) {
+    private boolean confirmQuit(ConsoleReader reader) throws IOException {
+    	reader.printNewline();
+    	reader.printString("Sure to quit without saving ? (y / n)");
+        reader.printNewline();
+        //String yn = reader.readLine();
+        int yn = reader.readVirtualKey();
+        
+        switch (yn) {
+        case 'y' :
+        	return true;
+        
+        case 'n' :
+        	return false;
+        	
+        default:
+        	reader.printString("Please type 'y' or 'n'");
+            reader.printNewline();
+        	return confirmQuit(reader);
+        }
+	}
+
+	private void printCorpusItemStatus(CorpusItem ci, ConsoleReader reader) throws IOException {
+    	if (ci.isDiscarded()) {
+            reader.printString("[d] ");
+        } else if (ci.isValid()) {
+            reader.printString("[v] ");
+        } else {
+            reader.printString("[ ] ");
+        }
+	}
+
+	protected CorpusItem handleNext(RefinerController controller, ConsoleReader reader) throws IOException {
         if (controller.hasNext()) {
             return controller.next();
         } else {
+        	reader.printString("No next item for this file");
+        	reader.printNewline();
             return controller.getCurrentItem();
         }
     }
-
-    protected CorpusItem handlePrevious(RefinerController controller, ConsoleReader reader) {
+    
+    protected CorpusItem handlePrevious(RefinerController controller, ConsoleReader reader) throws IOException {
         if (controller.hasPrevious()) {
             return controller.previous();
         } else {
+        	reader.printString("No previous item for this file");
+        	reader.printNewline();
             return controller.getCurrentItem();
         }
     }
-
+    
+    protected void viewPrevious(RefinerController controller, ConsoleReader reader) throws IOException {
+        if (controller.hasPrevious()) {
+        	printCorpusItemStatus(controller.viewPrevious(), reader);
+            reader.printString(controller.viewPrevious().getAnnotatedContent());
+            reader.printNewline();
+        } else {
+        	reader.printString("No previous item for this file");
+        	reader.printNewline();
+        }
+    }
     public static void main(String[] args) {
         // parse CLI configuration to find input corpus file and output corpus file (and later models)
         RefinerCLI cli = new RefinerCLI();
